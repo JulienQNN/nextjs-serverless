@@ -20,10 +20,7 @@ export default function Home() {
     setMessage('');
   };
 
-  const { data, error, isLoading } = useSWR(
-    `/api/hello?value1=${chaco}`,
-    fetcher
-  );
+  const { data, error, isLoading } = useSWR(`/api/?value1=${chaco}`, fetcher);
 
   // useEffect(() => {
   //   setLoading(true);
