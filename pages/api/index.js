@@ -5,7 +5,7 @@ app.get('/api', (req, res) => {
   let options = {
     mode: 'text',
     pythonOptions: ['-u'], // get print results in real-time
-    scriptPath: '../nextjs-serverless/pages/api',
+    scriptPath: '../nextjs-serverless/api',
     args: ['chaco', req.query.value1],
   };
   //res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
